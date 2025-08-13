@@ -5,7 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **reference_number** | **string** | Numer referencyjny sesji. |
-**status** | [**\OpenAPI\Client\Model\StatusInfo**](StatusInfo.md) | Status sesji. |
+**status** | [**\NetSeven\KseF2Model\StatusInfo**](StatusInfo.md) | Status sesji. |
 **date_created** | **\DateTime** | Data utowrzenia sesji. |
 **date_updated** | **\DateTime** | Data ostatniej aktywności w ramach sesji. |
 **total_invoice_count** | **int** | Łączna liczba faktur (uwzględnia również te w trakcie przetwarzania). |

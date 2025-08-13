@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**roles** | [**\OpenAPI\Client\Model\EntityRole[]**](EntityRole.md) | Lista ról. | [optional]
+**roles** | [**\NetSeven\KseF2Model\EntityRole[]**](EntityRole.md) | Lista ról. | [optional]
 **page** | **int** | Numer strony. | [optional]
 **page_size** | **int** | Rozmiar strony. | [optional]
 

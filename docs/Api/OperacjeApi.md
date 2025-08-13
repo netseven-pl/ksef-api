@@ -1,4 +1,4 @@
-# OpenAPI\Client\OperacjeApi
+# NetSeven\OperacjeApi
 
 All URIs are relative to http://localhost, except if the operation defines another base path.
 
@@ -10,7 +10,7 @@ All URIs are relative to http://localhost, except if the operation defines anoth
 ## `apiV2PermissionsOperationsOperationReferenceNumberGet()`
 
 ```php
-apiV2PermissionsOperationsOperationReferenceNumberGet($operation_reference_number): \OpenAPI\Client\Model\PermissionsOperationStatusResponse
+apiV2PermissionsOperationsOperationReferenceNumberGet($operation_reference_number): \NetSeven\KseF2Model\PermissionsOperationStatusResponse
 ```
 
 Pobranie statusu operacji
@@ -25,7 +25,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\OperacjeApi(
+$apiInstance = new NetSeven\Api\OperacjeApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -48,7 +48,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\PermissionsOperationStatusResponse**](../Model/PermissionsOperationStatusResponse.md)
+[**\NetSeven\KseF2Model\PermissionsOperationStatusResponse**](../Model/PermissionsOperationStatusResponse.md)
 
 ### Authorization
 

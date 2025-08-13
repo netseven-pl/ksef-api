@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**permissions** | [**\OpenAPI\Client\Model\PersonPermission[]**](PersonPermission.md) | Lista uprawnień. | [optional]
+**permissions** | [**\NetSeven\KseF2Model\PersonPermission[]**](PersonPermission.md) | Lista uprawnień. | [optional]
 **page** | **int** | Numer strony. | [optional]
 **page_size** | **int** | Rozmiar strony. | [optional]
 

@@ -1,4 +1,4 @@
-# OpenAPI\Client\TokenyKSeFApi
+# NetSeven\TokenyKSeFApi
 
 All URIs are relative to http://localhost, except if the operation defines another base path.
 
@@ -13,7 +13,7 @@ All URIs are relative to http://localhost, except if the operation defines anoth
 ## `apiV2TokensGet()`
 
 ```php
-apiV2TokensGet($status, $x_continuation_token, $page_size): \OpenAPI\Client\Model\QueryTokensResponse
+apiV2TokensGet($status, $x_continuation_token, $page_size): \NetSeven\KseF2Model\QueryTokensResponse
 ```
 
 Pobranie listy wygenerowanych tokenów
@@ -26,12 +26,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\TokenyKSeFApi(
+$apiInstance = new NetSeven\Api\TokenyKSeFApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$status = array(new \OpenAPI\Client\Model\\OpenAPI\Client\Model\AuthenticationTokenStatus()); // \OpenAPI\Client\Model\AuthenticationTokenStatus[] | Status tokenów do zwrócenia. W przypadku braku parametru zwracane są wszystkie tokeny. Parametr można przekazać wielokrotnie.  | Wartość | Opis |  | --- | --- |  | Pending | Token został utworzony ale jest jeszcze w trakcie aktywacji i nadawania uprawnień. Nie może być jeszcze wykorzystywany do uwierzytelniania. |  | Active | Token jest aktywny i może być wykorzystywany do uwierzytelniania. |  | Revoking | Token jest w trakcie unieważniania. Nie może już być wykorzystywany do uwierzytelniania. |  | Revoked | Token został unieważniony i nie może być wykorzystywany do uwierzytelniania. |  | Failed | Nie udało się aktywować tokena. Należy wygenerować nowy token, obecny nie może być wykorzystywany do uwierzytelniania. |
+$status = array(new \NetSeven\KseF2Model\\NetSeven\KseF2Model\AuthenticationTokenStatus()); // \NetSeven\KseF2Model\AuthenticationTokenStatus[] | Status tokenów do zwrócenia. W przypadku braku parametru zwracane są wszystkie tokeny. Parametr można przekazać wielokrotnie.  | Wartość | Opis |  | --- | --- |  | Pending | Token został utworzony ale jest jeszcze w trakcie aktywacji i nadawania uprawnień. Nie może być jeszcze wykorzystywany do uwierzytelniania. |  | Active | Token jest aktywny i może być wykorzystywany do uwierzytelniania. |  | Revoking | Token jest w trakcie unieważniania. Nie może już być wykorzystywany do uwierzytelniania. |  | Revoked | Token został unieważniony i nie może być wykorzystywany do uwierzytelniania. |  | Failed | Nie udało się aktywować tokena. Należy wygenerować nowy token, obecny nie może być wykorzystywany do uwierzytelniania. |
 $x_continuation_token = 'x_continuation_token_example'; // string | Token służący do pobrania kolejnej strony wyników.
 $page_size = 10; // int | Rozmiar strony wyników.
 
@@ -47,13 +47,13 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **status** | [**\OpenAPI\Client\Model\AuthenticationTokenStatus[]**](../Model/\OpenAPI\Client\Model\AuthenticationTokenStatus.md)| Status tokenów do zwrócenia. W przypadku braku parametru zwracane są wszystkie tokeny. Parametr można przekazać wielokrotnie.  | Wartość | Opis |  | --- | --- |  | Pending | Token został utworzony ale jest jeszcze w trakcie aktywacji i nadawania uprawnień. Nie może być jeszcze wykorzystywany do uwierzytelniania. |  | Active | Token jest aktywny i może być wykorzystywany do uwierzytelniania. |  | Revoking | Token jest w trakcie unieważniania. Nie może już być wykorzystywany do uwierzytelniania. |  | Revoked | Token został unieważniony i nie może być wykorzystywany do uwierzytelniania. |  | Failed | Nie udało się aktywować tokena. Należy wygenerować nowy token, obecny nie może być wykorzystywany do uwierzytelniania. | | [optional] |
+| **status** | [**\NetSeven\KseF2Model\AuthenticationTokenStatus[]**](../Model/\NetSeven\KseF2Model\AuthenticationTokenStatus.md)| Status tokenów do zwrócenia. W przypadku braku parametru zwracane są wszystkie tokeny. Parametr można przekazać wielokrotnie.  | Wartość | Opis |  | --- | --- |  | Pending | Token został utworzony ale jest jeszcze w trakcie aktywacji i nadawania uprawnień. Nie może być jeszcze wykorzystywany do uwierzytelniania. |  | Active | Token jest aktywny i może być wykorzystywany do uwierzytelniania. |  | Revoking | Token jest w trakcie unieważniania. Nie może już być wykorzystywany do uwierzytelniania. |  | Revoked | Token został unieważniony i nie może być wykorzystywany do uwierzytelniania. |  | Failed | Nie udało się aktywować tokena. Należy wygenerować nowy token, obecny nie może być wykorzystywany do uwierzytelniania. | | [optional] |
 | **x_continuation_token** | **string**| Token służący do pobrania kolejnej strony wyników. | [optional] |
 | **page_size** | **int**| Rozmiar strony wyników. | [optional] [default to 10] |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\QueryTokensResponse**](../Model/QueryTokensResponse.md)
+[**\NetSeven\KseF2Model\QueryTokensResponse**](../Model/QueryTokensResponse.md)
 
 ### Authorization
 
@@ -71,7 +71,7 @@ No authorization required
 ## `apiV2TokensPost()`
 
 ```php
-apiV2TokensPost($generate_token_request): \OpenAPI\Client\Model\GenerateTokenResponse
+apiV2TokensPost($generate_token_request): \NetSeven\KseF2Model\GenerateTokenResponse
 ```
 
 Wygenerowanie nowego tokena
@@ -84,12 +84,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\TokenyKSeFApi(
+$apiInstance = new NetSeven\Api\TokenyKSeFApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$generate_token_request = new \OpenAPI\Client\Model\GenerateTokenRequest(); // \OpenAPI\Client\Model\GenerateTokenRequest
+$generate_token_request = new \NetSeven\KseF2Model\GenerateTokenRequest(); // \NetSeven\KseF2Model\GenerateTokenRequest
 
 try {
     $result = $apiInstance->apiV2TokensPost($generate_token_request);
@@ -103,11 +103,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **generate_token_request** | [**\OpenAPI\Client\Model\GenerateTokenRequest**](../Model/GenerateTokenRequest.md)|  | [optional] |
+| **generate_token_request** | [**\NetSeven\KseF2Model\GenerateTokenRequest**](../Model/GenerateTokenRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\GenerateTokenResponse**](../Model/GenerateTokenResponse.md)
+[**\NetSeven\KseF2Model\GenerateTokenResponse**](../Model/GenerateTokenResponse.md)
 
 ### Authorization
 
@@ -140,7 +140,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\TokenyKSeFApi(
+$apiInstance = new NetSeven\Api\TokenyKSeFApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -180,7 +180,7 @@ No authorization required
 ## `apiV2TokensReferenceNumberGet()`
 
 ```php
-apiV2TokensReferenceNumberGet($reference_number): \OpenAPI\Client\Model\AuthenticationToken
+apiV2TokensReferenceNumberGet($reference_number): \NetSeven\KseF2Model\AuthenticationToken
 ```
 
 Pobranie statusu tokena
@@ -193,7 +193,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\TokenyKSeFApi(
+$apiInstance = new NetSeven\Api\TokenyKSeFApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -216,7 +216,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\AuthenticationToken**](../Model/AuthenticationToken.md)
+[**\NetSeven\KseF2Model\AuthenticationToken**](../Model/AuthenticationToken.md)
 
 ### Authorization
 

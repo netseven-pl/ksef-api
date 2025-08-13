@@ -1,4 +1,4 @@
-# OpenAPI\Client\AktywneSesjeApi
+# NetSeven\AktywneSesjeApi
 
 All URIs are relative to http://localhost, except if the operation defines another base path.
 
@@ -27,7 +27,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\AktywneSesjeApi(
+$apiInstance = new NetSeven\Api\AktywneSesjeApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -64,7 +64,7 @@ No authorization required
 ## `apiV2AuthSessionsGet()`
 
 ```php
-apiV2AuthSessionsGet($x_continuation_token, $page_size): \OpenAPI\Client\Model\AuthenticationListResponse
+apiV2AuthSessionsGet($x_continuation_token, $page_size): \NetSeven\KseF2Model\AuthenticationListResponse
 ```
 
 Pobranie listy aktywnych sesji
@@ -79,7 +79,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\AktywneSesjeApi(
+$apiInstance = new NetSeven\Api\AktywneSesjeApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -104,7 +104,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\AuthenticationListResponse**](../Model/AuthenticationListResponse.md)
+[**\NetSeven\KseF2Model\AuthenticationListResponse**](../Model/AuthenticationListResponse.md)
 
 ### Authorization
 
@@ -137,7 +137,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\AktywneSesjeApi(
+$apiInstance = new NetSeven\Api\AktywneSesjeApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()

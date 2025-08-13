@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**permissions** | [**\OpenAPI\Client\Model\EuEntityPermission[]**](EuEntityPermission.md) | Lista uprawnień. | [optional]
+**permissions** | [**\NetSeven\KseF2Model\EuEntityPermission[]**](EuEntityPermission.md) | Lista uprawnień. | [optional]
 **page** | **int** | Numer strony. | [optional]
 **page_size** | **int** | Rozmiar strony. | [optional]
 

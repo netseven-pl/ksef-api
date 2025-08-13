@@ -1,4 +1,4 @@
-# OpenAPI\Client\WysykaInteraktywnaApi
+# NetSeven\WysykaInteraktywnaApi
 
 All URIs are relative to http://localhost, except if the operation defines another base path.
 
@@ -27,7 +27,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\WysykaInteraktywnaApi(
+$apiInstance = new NetSeven\Api\WysykaInteraktywnaApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -67,7 +67,7 @@ No authorization required
 ## `apiV2SessionsOnlineReferenceNumberInvoicesPost()`
 
 ```php
-apiV2SessionsOnlineReferenceNumberInvoicesPost($reference_number, $send_invoice_request): \OpenAPI\Client\Model\SendInvoiceResponse
+apiV2SessionsOnlineReferenceNumberInvoicesPost($reference_number, $send_invoice_request): \NetSeven\KseF2Model\SendInvoiceResponse
 ```
 
 Wysłanie faktury
@@ -82,13 +82,13 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\WysykaInteraktywnaApi(
+$apiInstance = new NetSeven\Api\WysykaInteraktywnaApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $reference_number = 'reference_number_example'; // string | Numer referencyjny sesji
-$send_invoice_request = {"invoiceHash":"EbrK4cOSjW4hEpJaHU71YXSOZZmqP5++dK9nLgTzgV4=","invoiceSize":6480,"encryptedInvoiceHash":"miYb1z3Ljw5VucTZslv3Tlt+V/EK1V8Q8evD8HMQ0dc=","encryptedInvoiceSize":6496,"encryptedInvoiceContent":"...","offlineMode":false}; // \OpenAPI\Client\Model\SendInvoiceRequest | Dane faktury
+$send_invoice_request = {"invoiceHash":"EbrK4cOSjW4hEpJaHU71YXSOZZmqP5++dK9nLgTzgV4=","invoiceSize":6480,"encryptedInvoiceHash":"miYb1z3Ljw5VucTZslv3Tlt+V/EK1V8Q8evD8HMQ0dc=","encryptedInvoiceSize":6496,"encryptedInvoiceContent":"...","offlineMode":false}; // \NetSeven\KseF2Model\SendInvoiceRequest | Dane faktury
 
 try {
     $result = $apiInstance->apiV2SessionsOnlineReferenceNumberInvoicesPost($reference_number, $send_invoice_request);
@@ -103,11 +103,11 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **reference_number** | **string**| Numer referencyjny sesji | |
-| **send_invoice_request** | [**\OpenAPI\Client\Model\SendInvoiceRequest**](../Model/SendInvoiceRequest.md)| Dane faktury | [optional] |
+| **send_invoice_request** | [**\NetSeven\KseF2Model\SendInvoiceRequest**](../Model/SendInvoiceRequest.md)| Dane faktury | [optional] |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\SendInvoiceResponse**](../Model/SendInvoiceResponse.md)
+[**\NetSeven\KseF2Model\SendInvoiceResponse**](../Model/SendInvoiceResponse.md)
 
 ### Authorization
 
@@ -125,7 +125,7 @@ No authorization required
 ## `onlineSessionOpen()`
 
 ```php
-onlineSessionOpen($open_online_session_request): \OpenAPI\Client\Model\OpenOnlineSessionResponse
+onlineSessionOpen($open_online_session_request): \NetSeven\KseF2Model\OpenOnlineSessionResponse
 ```
 
 Otwarcie sesji interaktywnej
@@ -140,12 +140,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\WysykaInteraktywnaApi(
+$apiInstance = new NetSeven\Api\WysykaInteraktywnaApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$open_online_session_request = {"formCode":{"systemCode":"FA (2)","schemaVersion":"1-0E","value":"FA"},"encryption":{"encryptedSymmetricKey":"bdUVjqLj+y2q6aBUuLxxXYAMqeDuIBRTyr+hB96DaWKaGzuVHw9p+Nk9vhzgF/Q5cavK2k6eCh6SdsrWI0s9mFFj4A4UJtsyD8Dn3esLfUZ5A1juuG3q3SBi/XOC/+9W+0T/KdwdE393mbiUNyx1K/0bw31vKJL0COeJIDP7usAMDl42/H1TNvkjk+8iZ80V0qW7D+RZdz+tdiY1xV0f2mfgwJ46V0CpZ+sB9UAssRj+eVffavJ0TOg2b5JaBxE8MCAvrF6rO5K4KBjUmoy7PP7g1qIbm8xI2GO0KnfPOO5OWj8rsotRwBgu7x19Ine3qYUvuvCZlXRGGZ5NHIzWPM4O74+gNalaMgFCsmv8mMhETSU4SfAGmJr9edxPjQSbgD5i2X4eDRDMwvyaAa7CP1b2oICju+0L7Fywd2ZtUcr6El++eTVoi8HYsTArntET++gULT7XXjmb8e3O0nxrYiYsE9GMJ7HBGv3NOoJ1NTm3a7U6+c0ZJiBVLvn6xXw10LQX243xH+ehsKo6djQJKYtqcNPaXtCwM1c9RrsOx/wRXyWCtTffqLiaR0LbYvfMJAcEWceG+RaeAx4p37OiQqdJypd6LAv9/0ECWK8Bip8yyoA+0EYiAJb9YuDz2YlQX9Mx9E9FzFIAsgEQ2w723HZYWgPywLb+dlsum4lTZKQ=","initializationVector":"OmtDQdl6vkOI1GLKZSjgEg=="}}; // \OpenAPI\Client\Model\OpenOnlineSessionRequest
+$open_online_session_request = {"formCode":{"systemCode":"FA (2)","schemaVersion":"1-0E","value":"FA"},"encryption":{"encryptedSymmetricKey":"bdUVjqLj+y2q6aBUuLxxXYAMqeDuIBRTyr+hB96DaWKaGzuVHw9p+Nk9vhzgF/Q5cavK2k6eCh6SdsrWI0s9mFFj4A4UJtsyD8Dn3esLfUZ5A1juuG3q3SBi/XOC/+9W+0T/KdwdE393mbiUNyx1K/0bw31vKJL0COeJIDP7usAMDl42/H1TNvkjk+8iZ80V0qW7D+RZdz+tdiY1xV0f2mfgwJ46V0CpZ+sB9UAssRj+eVffavJ0TOg2b5JaBxE8MCAvrF6rO5K4KBjUmoy7PP7g1qIbm8xI2GO0KnfPOO5OWj8rsotRwBgu7x19Ine3qYUvuvCZlXRGGZ5NHIzWPM4O74+gNalaMgFCsmv8mMhETSU4SfAGmJr9edxPjQSbgD5i2X4eDRDMwvyaAa7CP1b2oICju+0L7Fywd2ZtUcr6El++eTVoi8HYsTArntET++gULT7XXjmb8e3O0nxrYiYsE9GMJ7HBGv3NOoJ1NTm3a7U6+c0ZJiBVLvn6xXw10LQX243xH+ehsKo6djQJKYtqcNPaXtCwM1c9RrsOx/wRXyWCtTffqLiaR0LbYvfMJAcEWceG+RaeAx4p37OiQqdJypd6LAv9/0ECWK8Bip8yyoA+0EYiAJb9YuDz2YlQX9Mx9E9FzFIAsgEQ2w723HZYWgPywLb+dlsum4lTZKQ=","initializationVector":"OmtDQdl6vkOI1GLKZSjgEg=="}}; // \NetSeven\KseF2Model\OpenOnlineSessionRequest
 
 try {
     $result = $apiInstance->onlineSessionOpen($open_online_session_request);
@@ -159,11 +159,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **open_online_session_request** | [**\OpenAPI\Client\Model\OpenOnlineSessionRequest**](../Model/OpenOnlineSessionRequest.md)|  | [optional] |
+| **open_online_session_request** | [**\NetSeven\KseF2Model\OpenOnlineSessionRequest**](../Model/OpenOnlineSessionRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\OpenOnlineSessionResponse**](../Model/OpenOnlineSessionResponse.md)
+[**\NetSeven\KseF2Model\OpenOnlineSessionResponse**](../Model/OpenOnlineSessionResponse.md)
 
 ### Authorization
 

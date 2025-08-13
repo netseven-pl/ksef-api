@@ -1,4 +1,4 @@
-# OpenAPI\Client\StatusWysykiIUPOApi
+# NetSeven\StatusWysykiIUPOApi
 
 All URIs are relative to http://localhost, except if the operation defines another base path.
 
@@ -17,7 +17,7 @@ All URIs are relative to http://localhost, except if the operation defines anoth
 ## `apiV2SessionsGet()`
 
 ```php
-apiV2SessionsGet($session_type, $page_size, $reference_number, $date_created_from, $date_created_to, $date_closed_from, $date_closed_to, $date_modified_from, $date_modified_to, $statuses, $x_continuation_token): \OpenAPI\Client\Model\SessionsQueryResponse
+apiV2SessionsGet($session_type, $page_size, $reference_number, $date_created_from, $date_created_to, $date_closed_from, $date_closed_to, $date_modified_from, $date_modified_to, $statuses, $x_continuation_token): \NetSeven\KseF2Model\SessionsQueryResponse
 ```
 
 Pobranie listy sesji
@@ -32,12 +32,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\StatusWysykiIUPOApi(
+$apiInstance = new NetSeven\Api\StatusWysykiIUPOApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$session_type = 'session_type_example'; // \OpenAPIClientModelSessionType | Typ sesji.  | Wartość | Opis |  | --- | --- |  | Online | Wysyłka interaktywna (pojedyncze faktury). |  | Batch | Wysyłka wsadowa (paczka faktur). |
+$session_type = 'session_type_example'; // \NetSevenKseF2ModelSessionType | Typ sesji.  | Wartość | Opis |  | --- | --- |  | Online | Wysyłka interaktywna (pojedyncze faktury). |  | Batch | Wysyłka wsadowa (paczka faktur). |
 $page_size = 56; // int | Rozmiar strony.
 $reference_number = 'reference_number_example'; // string | Numer referencyjny sesji.
 $date_created_from = new \DateTime('2013-10-20T19:20:30+01:00'); // \DateTime | Data utworzenia sesji (od).
@@ -46,7 +46,7 @@ $date_closed_from = new \DateTime('2013-10-20T19:20:30+01:00'); // \DateTime | D
 $date_closed_to = new \DateTime('2013-10-20T19:20:30+01:00'); // \DateTime | Data zamknięcia sesji (do).
 $date_modified_from = new \DateTime('2013-10-20T19:20:30+01:00'); // \DateTime | Data ostatniej aktywności (wysyłka faktury lub zmiana statusu) w ramach sesji (od).
 $date_modified_to = new \DateTime('2013-10-20T19:20:30+01:00'); // \DateTime | Data ostatniej aktywności (wysyłka faktury lub zmiana statusu) w ramach sesji (do).
-$statuses = array(new \OpenAPI\Client\Model\\OpenAPI\Client\Model\CommonSessionStatus()); // \OpenAPI\Client\Model\CommonSessionStatus[] | Statusy sesji.  | Wartość | Opis |  | --- | --- |  | Succeeded | Sesja przetworzona poprawnie.            W trakcie przetwarzania sesji nie wystąpiły żadne błędy, ale część faktur nadal mogła zostać odrzucona. |  | InProgress | Sesja aktywna. |  | Failed | Sesja nie przetworzona z powodu błędów.            Na etapie rozpoczynania lub kończenia sesji wystąpiły błędy, które nie pozwoliły na jej poprawne przetworzenie. |
+$statuses = array(new \NetSeven\KseF2Model\\NetSeven\KseF2Model\CommonSessionStatus()); // \NetSeven\KseF2Model\CommonSessionStatus[] | Statusy sesji.  | Wartość | Opis |  | --- | --- |  | Succeeded | Sesja przetworzona poprawnie.            W trakcie przetwarzania sesji nie wystąpiły żadne błędy, ale część faktur nadal mogła zostać odrzucona. |  | InProgress | Sesja aktywna. |  | Failed | Sesja nie przetworzona z powodu błędów.            Na etapie rozpoczynania lub kończenia sesji wystąpiły błędy, które nie pozwoliły na jej poprawne przetworzenie. |
 $x_continuation_token = 'x_continuation_token_example'; // string | Token służący do pobrania kolejnej strony wyników.
 
 try {
@@ -61,7 +61,7 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **session_type** | **\OpenAPIClientModelSessionType**| Typ sesji.  | Wartość | Opis |  | --- | --- |  | Online | Wysyłka interaktywna (pojedyncze faktury). |  | Batch | Wysyłka wsadowa (paczka faktur). | | |
+| **session_type** | **\NetSevenKseF2ModelSessionType**| Typ sesji.  | Wartość | Opis |  | --- | --- |  | Online | Wysyłka interaktywna (pojedyncze faktury). |  | Batch | Wysyłka wsadowa (paczka faktur). | | |
 | **page_size** | **int**| Rozmiar strony. | [optional] |
 | **reference_number** | **string**| Numer referencyjny sesji. | [optional] |
 | **date_created_from** | **\DateTime**| Data utworzenia sesji (od). | [optional] |
@@ -70,12 +70,12 @@ try {
 | **date_closed_to** | **\DateTime**| Data zamknięcia sesji (do). | [optional] |
 | **date_modified_from** | **\DateTime**| Data ostatniej aktywności (wysyłka faktury lub zmiana statusu) w ramach sesji (od). | [optional] |
 | **date_modified_to** | **\DateTime**| Data ostatniej aktywności (wysyłka faktury lub zmiana statusu) w ramach sesji (do). | [optional] |
-| **statuses** | [**\OpenAPI\Client\Model\CommonSessionStatus[]**](../Model/\OpenAPI\Client\Model\CommonSessionStatus.md)| Statusy sesji.  | Wartość | Opis |  | --- | --- |  | Succeeded | Sesja przetworzona poprawnie.            W trakcie przetwarzania sesji nie wystąpiły żadne błędy, ale część faktur nadal mogła zostać odrzucona. |  | InProgress | Sesja aktywna. |  | Failed | Sesja nie przetworzona z powodu błędów.            Na etapie rozpoczynania lub kończenia sesji wystąpiły błędy, które nie pozwoliły na jej poprawne przetworzenie. | | [optional] |
+| **statuses** | [**\NetSeven\KseF2Model\CommonSessionStatus[]**](../Model/\NetSeven\KseF2Model\CommonSessionStatus.md)| Statusy sesji.  | Wartość | Opis |  | --- | --- |  | Succeeded | Sesja przetworzona poprawnie.            W trakcie przetwarzania sesji nie wystąpiły żadne błędy, ale część faktur nadal mogła zostać odrzucona. |  | InProgress | Sesja aktywna. |  | Failed | Sesja nie przetworzona z powodu błędów.            Na etapie rozpoczynania lub kończenia sesji wystąpiły błędy, które nie pozwoliły na jej poprawne przetworzenie. | | [optional] |
 | **x_continuation_token** | **string**| Token służący do pobrania kolejnej strony wyników. | [optional] |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\SessionsQueryResponse**](../Model/SessionsQueryResponse.md)
+[**\NetSeven\KseF2Model\SessionsQueryResponse**](../Model/SessionsQueryResponse.md)
 
 ### Authorization
 
@@ -93,7 +93,7 @@ No authorization required
 ## `apiV2SessionsReferenceNumberGet()`
 
 ```php
-apiV2SessionsReferenceNumberGet($reference_number): \OpenAPI\Client\Model\SessionStatusResponse
+apiV2SessionsReferenceNumberGet($reference_number): \NetSeven\KseF2Model\SessionStatusResponse
 ```
 
 Pobranie statusu sesji
@@ -108,7 +108,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\StatusWysykiIUPOApi(
+$apiInstance = new NetSeven\Api\StatusWysykiIUPOApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -131,7 +131,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\SessionStatusResponse**](../Model/SessionStatusResponse.md)
+[**\NetSeven\KseF2Model\SessionStatusResponse**](../Model/SessionStatusResponse.md)
 
 ### Authorization
 
@@ -149,7 +149,7 @@ No authorization required
 ## `apiV2SessionsReferenceNumberInvoicesFailedGet()`
 
 ```php
-apiV2SessionsReferenceNumberInvoicesFailedGet($reference_number, $x_continuation_token, $page_size): \OpenAPI\Client\Model\SessionInvoicesResponse
+apiV2SessionsReferenceNumberInvoicesFailedGet($reference_number, $x_continuation_token, $page_size): \NetSeven\KseF2Model\SessionInvoicesResponse
 ```
 
 Pobranie niepoprawnie przetworzonych faktur sesji
@@ -164,7 +164,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\StatusWysykiIUPOApi(
+$apiInstance = new NetSeven\Api\StatusWysykiIUPOApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -191,7 +191,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\SessionInvoicesResponse**](../Model/SessionInvoicesResponse.md)
+[**\NetSeven\KseF2Model\SessionInvoicesResponse**](../Model/SessionInvoicesResponse.md)
 
 ### Authorization
 
@@ -209,7 +209,7 @@ No authorization required
 ## `apiV2SessionsReferenceNumberInvoicesGet()`
 
 ```php
-apiV2SessionsReferenceNumberInvoicesGet($reference_number, $page_offset, $page_size): \OpenAPI\Client\Model\SessionInvoicesResponse
+apiV2SessionsReferenceNumberInvoicesGet($reference_number, $page_offset, $page_size): \NetSeven\KseF2Model\SessionInvoicesResponse
 ```
 
 Pobranie faktur sesji
@@ -224,7 +224,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\StatusWysykiIUPOApi(
+$apiInstance = new NetSeven\Api\StatusWysykiIUPOApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -251,7 +251,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\SessionInvoicesResponse**](../Model/SessionInvoicesResponse.md)
+[**\NetSeven\KseF2Model\SessionInvoicesResponse**](../Model/SessionInvoicesResponse.md)
 
 ### Authorization
 
@@ -269,7 +269,7 @@ No authorization required
 ## `apiV2SessionsReferenceNumberInvoicesInvoiceReferenceNumberGet()`
 
 ```php
-apiV2SessionsReferenceNumberInvoicesInvoiceReferenceNumberGet($reference_number, $invoice_reference_number): \OpenAPI\Client\Model\InvoiceStatusResponse
+apiV2SessionsReferenceNumberInvoicesInvoiceReferenceNumberGet($reference_number, $invoice_reference_number): \NetSeven\KseF2Model\InvoiceStatusResponse
 ```
 
 Pobranie statusu faktury z sesji
@@ -284,7 +284,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\StatusWysykiIUPOApi(
+$apiInstance = new NetSeven\Api\StatusWysykiIUPOApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -309,7 +309,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\InvoiceStatusResponse**](../Model/InvoiceStatusResponse.md)
+[**\NetSeven\KseF2Model\InvoiceStatusResponse**](../Model/InvoiceStatusResponse.md)
 
 ### Authorization
 
@@ -342,7 +342,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\StatusWysykiIUPOApi(
+$apiInstance = new NetSeven\Api\StatusWysykiIUPOApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -400,7 +400,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\StatusWysykiIUPOApi(
+$apiInstance = new NetSeven\Api\StatusWysykiIUPOApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -458,7 +458,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\StatusWysykiIUPOApi(
+$apiInstance = new NetSeven\Api\StatusWysykiIUPOApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()

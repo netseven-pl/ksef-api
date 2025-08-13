@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**authorization_grants** | [**\OpenAPI\Client\Model\EntityAuthorizationGrant[]**](EntityAuthorizationGrant.md) | Lista uprawnień. | [optional]
+**authorization_grants** | [**\NetSeven\KseF2Model\EntityAuthorizationGrant[]**](EntityAuthorizationGrant.md) | Lista uprawnień. | [optional]
 **page** | **int** | Numer strony. | [optional]
 **page_size** | **int** | Rozmiar strony. | [optional]
 

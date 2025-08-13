@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**permissions** | [**\OpenAPI\Client\Model\SubunitPermission[]**](SubunitPermission.md) | Lista uprawnień. | [optional]
+**permissions** | [**\NetSeven\KseF2Model\SubunitPermission[]**](SubunitPermission.md) | Lista uprawnień. | [optional]
 **page** | **int** | Numer strony. | [optional]
 **page_size** | **int** | Rozmiar strony. | [optional]
 

@@ -1,4 +1,4 @@
-# OpenAPI\Client\CertyfikatyKluczaPublicznegoApi
+# NetSeven\CertyfikatyKluczaPublicznegoApi
 
 All URIs are relative to http://localhost, except if the operation defines another base path.
 
@@ -10,7 +10,7 @@ All URIs are relative to http://localhost, except if the operation defines anoth
 ## `apiV2SecurityPublicKeyCertificatesGet()`
 
 ```php
-apiV2SecurityPublicKeyCertificatesGet(): \OpenAPI\Client\Model\PublicKeyCertificate[]
+apiV2SecurityPublicKeyCertificatesGet(): \NetSeven\KseF2Model\PublicKeyCertificate[]
 ```
 
 Pobranie certyfikatów
@@ -25,7 +25,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\CertyfikatyKluczaPublicznegoApi(
+$apiInstance = new NetSeven\Api\CertyfikatyKluczaPublicznegoApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -45,7 +45,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\OpenAPI\Client\Model\PublicKeyCertificate[]**](../Model/PublicKeyCertificate.md)
+[**\NetSeven\KseF2Model\PublicKeyCertificate[]**](../Model/PublicKeyCertificate.md)
 
 ### Authorization
 

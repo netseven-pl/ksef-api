@@ -1,4 +1,4 @@
-# OpenAPI\Client\WyszukiwanieNadanychUprawnieApi
+# NetSeven\WyszukiwanieNadanychUprawnieApi
 
 All URIs are relative to http://localhost, except if the operation defines another base path.
 
@@ -15,7 +15,7 @@ All URIs are relative to http://localhost, except if the operation defines anoth
 ## `apiV2PermissionsQueryAuthorizationsGrantsPost()`
 
 ```php
-apiV2PermissionsQueryAuthorizationsGrantsPost($page_offset, $page_size, $entity_authorization_permissions_query_request): \OpenAPI\Client\Model\QueryEntityAuthorizationPermissionsResponse
+apiV2PermissionsQueryAuthorizationsGrantsPost($page_offset, $page_size, $entity_authorization_permissions_query_request): \NetSeven\KseF2Model\QueryEntityAuthorizationPermissionsResponse
 ```
 
 Pobranie listy uprawnień podmiotowych do obsługi faktur
@@ -30,14 +30,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\WyszukiwanieNadanychUprawnieApi(
+$apiInstance = new NetSeven\Api\WyszukiwanieNadanychUprawnieApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $page_offset = 56; // int | Numer strony wyników.
 $page_size = 56; // int | Rozmiar strony wyników.
-$entity_authorization_permissions_query_request = {"authorizedIdentifier":{"type":"Nip","value":"7762811692"},"queryType":"Granted","permissionTypes":["SelfInvoicing","TaxRepresentative","RRInvoicing"]}; // \OpenAPI\Client\Model\EntityAuthorizationPermissionsQueryRequest
+$entity_authorization_permissions_query_request = {"authorizedIdentifier":{"type":"Nip","value":"7762811692"},"queryType":"Granted","permissionTypes":["SelfInvoicing","TaxRepresentative","RRInvoicing"]}; // \NetSeven\KseF2Model\EntityAuthorizationPermissionsQueryRequest
 
 try {
     $result = $apiInstance->apiV2PermissionsQueryAuthorizationsGrantsPost($page_offset, $page_size, $entity_authorization_permissions_query_request);
@@ -53,11 +53,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **page_offset** | **int**| Numer strony wyników. | [optional] |
 | **page_size** | **int**| Rozmiar strony wyników. | [optional] |
-| **entity_authorization_permissions_query_request** | [**\OpenAPI\Client\Model\EntityAuthorizationPermissionsQueryRequest**](../Model/EntityAuthorizationPermissionsQueryRequest.md)|  | [optional] |
+| **entity_authorization_permissions_query_request** | [**\NetSeven\KseF2Model\EntityAuthorizationPermissionsQueryRequest**](../Model/EntityAuthorizationPermissionsQueryRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\QueryEntityAuthorizationPermissionsResponse**](../Model/QueryEntityAuthorizationPermissionsResponse.md)
+[**\NetSeven\KseF2Model\QueryEntityAuthorizationPermissionsResponse**](../Model/QueryEntityAuthorizationPermissionsResponse.md)
 
 ### Authorization
 
@@ -75,7 +75,7 @@ No authorization required
 ## `apiV2PermissionsQueryEntitiesRolesGet()`
 
 ```php
-apiV2PermissionsQueryEntitiesRolesGet($page_offset, $page_size): \OpenAPI\Client\Model\QueryEntityRolesResponse
+apiV2PermissionsQueryEntitiesRolesGet($page_offset, $page_size): \NetSeven\KseF2Model\QueryEntityRolesResponse
 ```
 
 Pobranie listy ról podmiotu
@@ -90,7 +90,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\WyszukiwanieNadanychUprawnieApi(
+$apiInstance = new NetSeven\Api\WyszukiwanieNadanychUprawnieApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -115,7 +115,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\QueryEntityRolesResponse**](../Model/QueryEntityRolesResponse.md)
+[**\NetSeven\KseF2Model\QueryEntityRolesResponse**](../Model/QueryEntityRolesResponse.md)
 
 ### Authorization
 
@@ -133,7 +133,7 @@ No authorization required
 ## `apiV2PermissionsQueryEuEntitiesGrantsPost()`
 
 ```php
-apiV2PermissionsQueryEuEntitiesGrantsPost($page_offset, $page_size, $eu_entity_permissions_query_request): \OpenAPI\Client\Model\QueryEuEntityPermissionsResponse
+apiV2PermissionsQueryEuEntitiesGrantsPost($page_offset, $page_size, $eu_entity_permissions_query_request): \NetSeven\KseF2Model\QueryEuEntityPermissionsResponse
 ```
 
 Pobranie listy uprawnień administratorów lub reprezentantów podmiotów unijnych uprawnionych do samofakturowania
@@ -148,14 +148,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\WyszukiwanieNadanychUprawnieApi(
+$apiInstance = new NetSeven\Api\WyszukiwanieNadanychUprawnieApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $page_offset = 56; // int | Numer strony wyników.
 $page_size = 56; // int | Rozmiar strony wyników.
-$eu_entity_permissions_query_request = {"vatUeIdentifier":"DE123456789012","permissionTypes":["VatUeManage","Introspection"]}; // \OpenAPI\Client\Model\EuEntityPermissionsQueryRequest
+$eu_entity_permissions_query_request = {"vatUeIdentifier":"DE123456789012","permissionTypes":["VatUeManage","Introspection"]}; // \NetSeven\KseF2Model\EuEntityPermissionsQueryRequest
 
 try {
     $result = $apiInstance->apiV2PermissionsQueryEuEntitiesGrantsPost($page_offset, $page_size, $eu_entity_permissions_query_request);
@@ -171,11 +171,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **page_offset** | **int**| Numer strony wyników. | [optional] |
 | **page_size** | **int**| Rozmiar strony wyników. | [optional] |
-| **eu_entity_permissions_query_request** | [**\OpenAPI\Client\Model\EuEntityPermissionsQueryRequest**](../Model/EuEntityPermissionsQueryRequest.md)|  | [optional] |
+| **eu_entity_permissions_query_request** | [**\NetSeven\KseF2Model\EuEntityPermissionsQueryRequest**](../Model/EuEntityPermissionsQueryRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\QueryEuEntityPermissionsResponse**](../Model/QueryEuEntityPermissionsResponse.md)
+[**\NetSeven\KseF2Model\QueryEuEntityPermissionsResponse**](../Model/QueryEuEntityPermissionsResponse.md)
 
 ### Authorization
 
@@ -193,7 +193,7 @@ No authorization required
 ## `apiV2PermissionsQueryPersonsGrantsPost()`
 
 ```php
-apiV2PermissionsQueryPersonsGrantsPost($page_offset, $page_size, $person_permissions_query_request): \OpenAPI\Client\Model\QueryPersonPermissionsResponse
+apiV2PermissionsQueryPersonsGrantsPost($page_offset, $page_size, $person_permissions_query_request): \NetSeven\KseF2Model\QueryPersonPermissionsResponse
 ```
 
 Pobranie listy uprawnień do pracy w KSeF nadanych osobom fizycznym lub podmiotom
@@ -208,14 +208,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\WyszukiwanieNadanychUprawnieApi(
+$apiInstance = new NetSeven\Api\WyszukiwanieNadanychUprawnieApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $page_offset = 56; // int | Numer strony wyników.
 $page_size = 56; // int | Rozmiar strony wyników.
-$person_permissions_query_request = {"authorIdentifier":{"type":"Nip","value":"7762811692"},"permissionTypes":["CredentialsManage","CredentialsRead","InvoiceWrite"],"permissionState":"Active","queryType":"PermissionsInCurrentContext"}; // \OpenAPI\Client\Model\PersonPermissionsQueryRequest
+$person_permissions_query_request = {"authorIdentifier":{"type":"Nip","value":"7762811692"},"permissionTypes":["CredentialsManage","CredentialsRead","InvoiceWrite"],"permissionState":"Active","queryType":"PermissionsInCurrentContext"}; // \NetSeven\KseF2Model\PersonPermissionsQueryRequest
 
 try {
     $result = $apiInstance->apiV2PermissionsQueryPersonsGrantsPost($page_offset, $page_size, $person_permissions_query_request);
@@ -231,11 +231,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **page_offset** | **int**| Numer strony wyników. | [optional] |
 | **page_size** | **int**| Rozmiar strony wyników. | [optional] |
-| **person_permissions_query_request** | [**\OpenAPI\Client\Model\PersonPermissionsQueryRequest**](../Model/PersonPermissionsQueryRequest.md)|  | [optional] |
+| **person_permissions_query_request** | [**\NetSeven\KseF2Model\PersonPermissionsQueryRequest**](../Model/PersonPermissionsQueryRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\QueryPersonPermissionsResponse**](../Model/QueryPersonPermissionsResponse.md)
+[**\NetSeven\KseF2Model\QueryPersonPermissionsResponse**](../Model/QueryPersonPermissionsResponse.md)
 
 ### Authorization
 
@@ -253,7 +253,7 @@ No authorization required
 ## `apiV2PermissionsQuerySubordinateEntitiesRolesPost()`
 
 ```php
-apiV2PermissionsQuerySubordinateEntitiesRolesPost($page_offset, $page_size, $subordinate_entity_roles_query_request): \OpenAPI\Client\Model\QuerySubordinateEntityRolesResponse
+apiV2PermissionsQuerySubordinateEntitiesRolesPost($page_offset, $page_size, $subordinate_entity_roles_query_request): \NetSeven\KseF2Model\QuerySubordinateEntityRolesResponse
 ```
 
 Pobranie listy podmiotów podrzędnych
@@ -268,14 +268,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\WyszukiwanieNadanychUprawnieApi(
+$apiInstance = new NetSeven\Api\WyszukiwanieNadanychUprawnieApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $page_offset = 56; // int | Numer strony wyników.
 $page_size = 56; // int | Rozmiar strony wyników.
-$subordinate_entity_roles_query_request = {"subordinateEntityIdentifier":{"type":"Nip","value":"7762811692"}}; // \OpenAPI\Client\Model\SubordinateEntityRolesQueryRequest
+$subordinate_entity_roles_query_request = {"subordinateEntityIdentifier":{"type":"Nip","value":"7762811692"}}; // \NetSeven\KseF2Model\SubordinateEntityRolesQueryRequest
 
 try {
     $result = $apiInstance->apiV2PermissionsQuerySubordinateEntitiesRolesPost($page_offset, $page_size, $subordinate_entity_roles_query_request);
@@ -291,11 +291,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **page_offset** | **int**| Numer strony wyników. | [optional] |
 | **page_size** | **int**| Rozmiar strony wyników. | [optional] |
-| **subordinate_entity_roles_query_request** | [**\OpenAPI\Client\Model\SubordinateEntityRolesQueryRequest**](../Model/SubordinateEntityRolesQueryRequest.md)|  | [optional] |
+| **subordinate_entity_roles_query_request** | [**\NetSeven\KseF2Model\SubordinateEntityRolesQueryRequest**](../Model/SubordinateEntityRolesQueryRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\QuerySubordinateEntityRolesResponse**](../Model/QuerySubordinateEntityRolesResponse.md)
+[**\NetSeven\KseF2Model\QuerySubordinateEntityRolesResponse**](../Model/QuerySubordinateEntityRolesResponse.md)
 
 ### Authorization
 
@@ -313,7 +313,7 @@ No authorization required
 ## `apiV2PermissionsQuerySubunitsGrantsPost()`
 
 ```php
-apiV2PermissionsQuerySubunitsGrantsPost($page_offset, $page_size, $subunit_permissions_query_request): \OpenAPI\Client\Model\QuerySubunitPermissionsResponse
+apiV2PermissionsQuerySubunitsGrantsPost($page_offset, $page_size, $subunit_permissions_query_request): \NetSeven\KseF2Model\QuerySubunitPermissionsResponse
 ```
 
 Pobranie listy uprawnień administratorów jednostek i podmiotów podrzędnych
@@ -328,14 +328,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\WyszukiwanieNadanychUprawnieApi(
+$apiInstance = new NetSeven\Api\WyszukiwanieNadanychUprawnieApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $page_offset = 56; // int | Numer strony wyników.
 $page_size = 56; // int | Rozmiar strony wyników.
-$subunit_permissions_query_request = {"subunitIdentifier":{"type":"InternalId","value":"7762811692-12345"}}; // \OpenAPI\Client\Model\SubunitPermissionsQueryRequest
+$subunit_permissions_query_request = {"subunitIdentifier":{"type":"InternalId","value":"7762811692-12345"}}; // \NetSeven\KseF2Model\SubunitPermissionsQueryRequest
 
 try {
     $result = $apiInstance->apiV2PermissionsQuerySubunitsGrantsPost($page_offset, $page_size, $subunit_permissions_query_request);
@@ -351,11 +351,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **page_offset** | **int**| Numer strony wyników. | [optional] |
 | **page_size** | **int**| Rozmiar strony wyników. | [optional] |
-| **subunit_permissions_query_request** | [**\OpenAPI\Client\Model\SubunitPermissionsQueryRequest**](../Model/SubunitPermissionsQueryRequest.md)|  | [optional] |
+| **subunit_permissions_query_request** | [**\NetSeven\KseF2Model\SubunitPermissionsQueryRequest**](../Model/SubunitPermissionsQueryRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\QuerySubunitPermissionsResponse**](../Model/QuerySubunitPermissionsResponse.md)
+[**\NetSeven\KseF2Model\QuerySubunitPermissionsResponse**](../Model/QuerySubunitPermissionsResponse.md)
 
 ### Authorization
 

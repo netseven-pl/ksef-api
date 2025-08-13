@@ -1,4 +1,4 @@
-# OpenAPI\Client\OdbieranieUprawnieApi
+# NetSeven\OdbieranieUprawnieApi
 
 All URIs are relative to http://localhost, except if the operation defines another base path.
 
@@ -11,7 +11,7 @@ All URIs are relative to http://localhost, except if the operation defines anoth
 ## `apiV2PermissionsAuthorizationsGrantsPermissionIdDelete()`
 
 ```php
-apiV2PermissionsAuthorizationsGrantsPermissionIdDelete($permission_id): \OpenAPI\Client\Model\PermissionsOperationResponse
+apiV2PermissionsAuthorizationsGrantsPermissionIdDelete($permission_id): \NetSeven\KseF2Model\PermissionsOperationResponse
 ```
 
 Odebranie uprawnień podmiotowych
@@ -26,7 +26,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\OdbieranieUprawnieApi(
+$apiInstance = new NetSeven\Api\OdbieranieUprawnieApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -49,7 +49,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\PermissionsOperationResponse**](../Model/PermissionsOperationResponse.md)
+[**\NetSeven\KseF2Model\PermissionsOperationResponse**](../Model/PermissionsOperationResponse.md)
 
 ### Authorization
 
@@ -67,7 +67,7 @@ No authorization required
 ## `apiV2PermissionsCommonGrantsPermissionIdDelete()`
 
 ```php
-apiV2PermissionsCommonGrantsPermissionIdDelete($permission_id): \OpenAPI\Client\Model\PermissionsOperationResponse
+apiV2PermissionsCommonGrantsPermissionIdDelete($permission_id): \NetSeven\KseF2Model\PermissionsOperationResponse
 ```
 
 Odebranie uprawnień
@@ -82,7 +82,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\OdbieranieUprawnieApi(
+$apiInstance = new NetSeven\Api\OdbieranieUprawnieApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -105,7 +105,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\PermissionsOperationResponse**](../Model/PermissionsOperationResponse.md)
+[**\NetSeven\KseF2Model\PermissionsOperationResponse**](../Model/PermissionsOperationResponse.md)
 
 ### Authorization
 

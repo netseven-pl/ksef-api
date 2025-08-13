@@ -1,4 +1,4 @@
-# OpenAPI\Client\NadawanieUprawnieApi
+# NetSeven\NadawanieUprawnieApi
 
 All URIs are relative to http://localhost, except if the operation defines another base path.
 
@@ -16,7 +16,7 @@ All URIs are relative to http://localhost, except if the operation defines anoth
 ## `apiV2PermissionsAuthorizationsGrantsPost()`
 
 ```php
-apiV2PermissionsAuthorizationsGrantsPost($entity_authorization_permissions_grant_request): \OpenAPI\Client\Model\PermissionsOperationResponse
+apiV2PermissionsAuthorizationsGrantsPost($entity_authorization_permissions_grant_request): \NetSeven\KseF2Model\PermissionsOperationResponse
 ```
 
 Nadanie uprawnień podmiotowych
@@ -31,12 +31,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\NadawanieUprawnieApi(
+$apiInstance = new NetSeven\Api\NadawanieUprawnieApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$entity_authorization_permissions_grant_request = {"subjectIdentifier":{"type":"Nip","value":"7762811692"},"permission":"SelfInvoicing","description":"Uprawnienia do samofakturowania"}; // \OpenAPI\Client\Model\EntityAuthorizationPermissionsGrantRequest
+$entity_authorization_permissions_grant_request = {"subjectIdentifier":{"type":"Nip","value":"7762811692"},"permission":"SelfInvoicing","description":"Uprawnienia do samofakturowania"}; // \NetSeven\KseF2Model\EntityAuthorizationPermissionsGrantRequest
 
 try {
     $result = $apiInstance->apiV2PermissionsAuthorizationsGrantsPost($entity_authorization_permissions_grant_request);
@@ -50,11 +50,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **entity_authorization_permissions_grant_request** | [**\OpenAPI\Client\Model\EntityAuthorizationPermissionsGrantRequest**](../Model/EntityAuthorizationPermissionsGrantRequest.md)|  | [optional] |
+| **entity_authorization_permissions_grant_request** | [**\NetSeven\KseF2Model\EntityAuthorizationPermissionsGrantRequest**](../Model/EntityAuthorizationPermissionsGrantRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\PermissionsOperationResponse**](../Model/PermissionsOperationResponse.md)
+[**\NetSeven\KseF2Model\PermissionsOperationResponse**](../Model/PermissionsOperationResponse.md)
 
 ### Authorization
 
@@ -72,7 +72,7 @@ No authorization required
 ## `apiV2PermissionsEntitiesGrantsPost()`
 
 ```php
-apiV2PermissionsEntitiesGrantsPost($entity_permissions_grant_request): \OpenAPI\Client\Model\PermissionsOperationResponse
+apiV2PermissionsEntitiesGrantsPost($entity_permissions_grant_request): \NetSeven\KseF2Model\PermissionsOperationResponse
 ```
 
 Nadanie podmiotom uprawnień do obsługi faktur
@@ -87,12 +87,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\NadawanieUprawnieApi(
+$apiInstance = new NetSeven\Api\NadawanieUprawnieApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$entity_permissions_grant_request = {"subjectIdentifier":{"type":"Nip","value":"7762811692"},"permissions":[{"type":"InvoiceRead","canDelegate":true},{"type":"InvoiceWrite","canDelegate":true}],"description":"Uprawnienia do odczytu i wysyłania faktur z możliwością nadania ich pośrednio"}; // \OpenAPI\Client\Model\EntityPermissionsGrantRequest
+$entity_permissions_grant_request = {"subjectIdentifier":{"type":"Nip","value":"7762811692"},"permissions":[{"type":"InvoiceRead","canDelegate":true},{"type":"InvoiceWrite","canDelegate":true}],"description":"Uprawnienia do odczytu i wysyłania faktur z możliwością nadania ich pośrednio"}; // \NetSeven\KseF2Model\EntityPermissionsGrantRequest
 
 try {
     $result = $apiInstance->apiV2PermissionsEntitiesGrantsPost($entity_permissions_grant_request);
@@ -106,11 +106,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **entity_permissions_grant_request** | [**\OpenAPI\Client\Model\EntityPermissionsGrantRequest**](../Model/EntityPermissionsGrantRequest.md)|  | [optional] |
+| **entity_permissions_grant_request** | [**\NetSeven\KseF2Model\EntityPermissionsGrantRequest**](../Model/EntityPermissionsGrantRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\PermissionsOperationResponse**](../Model/PermissionsOperationResponse.md)
+[**\NetSeven\KseF2Model\PermissionsOperationResponse**](../Model/PermissionsOperationResponse.md)
 
 ### Authorization
 
@@ -128,7 +128,7 @@ No authorization required
 ## `apiV2PermissionsEuEntitiesAdministrationGrantsPost()`
 
 ```php
-apiV2PermissionsEuEntitiesAdministrationGrantsPost($eu_entity_administration_permissions_grant_request): \OpenAPI\Client\Model\PermissionsOperationResponse
+apiV2PermissionsEuEntitiesAdministrationGrantsPost($eu_entity_administration_permissions_grant_request): \NetSeven\KseF2Model\PermissionsOperationResponse
 ```
 
 Nadanie uprawnień administratora podmiotu unijnego
@@ -143,12 +143,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\NadawanieUprawnieApi(
+$apiInstance = new NetSeven\Api\NadawanieUprawnieApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$eu_entity_administration_permissions_grant_request = {"subjectIdentifier":{"type":"Fingerprint","value":"CEB3643BAC2C111ADDE971BDA5A80163441867D65389FC0BC0DFF8B4C1CD4E59"},"contextIdentifier":{"type":"NipVatUe","value":"7762811692-DE123456789012"},"description":"Administrator podmiotu unijnego DE123456789012"}; // \OpenAPI\Client\Model\EuEntityAdministrationPermissionsGrantRequest
+$eu_entity_administration_permissions_grant_request = {"subjectIdentifier":{"type":"Fingerprint","value":"CEB3643BAC2C111ADDE971BDA5A80163441867D65389FC0BC0DFF8B4C1CD4E59"},"contextIdentifier":{"type":"NipVatUe","value":"7762811692-DE123456789012"},"description":"Administrator podmiotu unijnego DE123456789012"}; // \NetSeven\KseF2Model\EuEntityAdministrationPermissionsGrantRequest
 
 try {
     $result = $apiInstance->apiV2PermissionsEuEntitiesAdministrationGrantsPost($eu_entity_administration_permissions_grant_request);
@@ -162,11 +162,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **eu_entity_administration_permissions_grant_request** | [**\OpenAPI\Client\Model\EuEntityAdministrationPermissionsGrantRequest**](../Model/EuEntityAdministrationPermissionsGrantRequest.md)|  | [optional] |
+| **eu_entity_administration_permissions_grant_request** | [**\NetSeven\KseF2Model\EuEntityAdministrationPermissionsGrantRequest**](../Model/EuEntityAdministrationPermissionsGrantRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\PermissionsOperationResponse**](../Model/PermissionsOperationResponse.md)
+[**\NetSeven\KseF2Model\PermissionsOperationResponse**](../Model/PermissionsOperationResponse.md)
 
 ### Authorization
 
@@ -184,7 +184,7 @@ No authorization required
 ## `apiV2PermissionsEuEntitiesGrantsPost()`
 
 ```php
-apiV2PermissionsEuEntitiesGrantsPost($eu_entity_permissions_grant_request): \OpenAPI\Client\Model\PermissionsOperationResponse
+apiV2PermissionsEuEntitiesGrantsPost($eu_entity_permissions_grant_request): \NetSeven\KseF2Model\PermissionsOperationResponse
 ```
 
 Nadanie uprawnień reprezentanta podmiotu unijnego
@@ -199,12 +199,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\NadawanieUprawnieApi(
+$apiInstance = new NetSeven\Api\NadawanieUprawnieApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$eu_entity_permissions_grant_request = {"subjectIdentifier":{"type":"Fingerprint","value":"CEB3643BAC2C111ADDE971BDA5A80163441867D65389FC0BC0DFF8B4C1CD4E59"},"permissions":["InvoiceRead","InvoiceWrite"],"description":"Reprezentant podmiotu unijnego"}; // \OpenAPI\Client\Model\EuEntityPermissionsGrantRequest
+$eu_entity_permissions_grant_request = {"subjectIdentifier":{"type":"Fingerprint","value":"CEB3643BAC2C111ADDE971BDA5A80163441867D65389FC0BC0DFF8B4C1CD4E59"},"permissions":["InvoiceRead","InvoiceWrite"],"description":"Reprezentant podmiotu unijnego"}; // \NetSeven\KseF2Model\EuEntityPermissionsGrantRequest
 
 try {
     $result = $apiInstance->apiV2PermissionsEuEntitiesGrantsPost($eu_entity_permissions_grant_request);
@@ -218,11 +218,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **eu_entity_permissions_grant_request** | [**\OpenAPI\Client\Model\EuEntityPermissionsGrantRequest**](../Model/EuEntityPermissionsGrantRequest.md)|  | [optional] |
+| **eu_entity_permissions_grant_request** | [**\NetSeven\KseF2Model\EuEntityPermissionsGrantRequest**](../Model/EuEntityPermissionsGrantRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\PermissionsOperationResponse**](../Model/PermissionsOperationResponse.md)
+[**\NetSeven\KseF2Model\PermissionsOperationResponse**](../Model/PermissionsOperationResponse.md)
 
 ### Authorization
 
@@ -240,7 +240,7 @@ No authorization required
 ## `apiV2PermissionsIndirectGrantsPost()`
 
 ```php
-apiV2PermissionsIndirectGrantsPost($indirect_permissions_grant_request): \OpenAPI\Client\Model\PermissionsOperationResponse
+apiV2PermissionsIndirectGrantsPost($indirect_permissions_grant_request): \NetSeven\KseF2Model\PermissionsOperationResponse
 ```
 
 Nadanie uprawnień w sposób pośredni
@@ -255,12 +255,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\NadawanieUprawnieApi(
+$apiInstance = new NetSeven\Api\NadawanieUprawnieApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$indirect_permissions_grant_request = {"subjectIdentifier":{"type":"Pesel","value":"15062788702"},"permissions":["InvoiceWrite","InvoiceRead"],"description":"Uprawnienia generalne do odczytu i wysyłania faktur, nadane w sposób pośredni"}; // \OpenAPI\Client\Model\IndirectPermissionsGrantRequest
+$indirect_permissions_grant_request = {"subjectIdentifier":{"type":"Pesel","value":"15062788702"},"permissions":["InvoiceWrite","InvoiceRead"],"description":"Uprawnienia generalne do odczytu i wysyłania faktur, nadane w sposób pośredni"}; // \NetSeven\KseF2Model\IndirectPermissionsGrantRequest
 
 try {
     $result = $apiInstance->apiV2PermissionsIndirectGrantsPost($indirect_permissions_grant_request);
@@ -274,11 +274,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **indirect_permissions_grant_request** | [**\OpenAPI\Client\Model\IndirectPermissionsGrantRequest**](../Model/IndirectPermissionsGrantRequest.md)|  | [optional] |
+| **indirect_permissions_grant_request** | [**\NetSeven\KseF2Model\IndirectPermissionsGrantRequest**](../Model/IndirectPermissionsGrantRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\PermissionsOperationResponse**](../Model/PermissionsOperationResponse.md)
+[**\NetSeven\KseF2Model\PermissionsOperationResponse**](../Model/PermissionsOperationResponse.md)
 
 ### Authorization
 
@@ -296,7 +296,7 @@ No authorization required
 ## `apiV2PermissionsPersonsGrantsPost()`
 
 ```php
-apiV2PermissionsPersonsGrantsPost($person_permissions_grant_request): \OpenAPI\Client\Model\PermissionsOperationResponse
+apiV2PermissionsPersonsGrantsPost($person_permissions_grant_request): \NetSeven\KseF2Model\PermissionsOperationResponse
 ```
 
 Nadanie osobom fizycznym uprawnień do pracy w KSeF
@@ -311,12 +311,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\NadawanieUprawnieApi(
+$apiInstance = new NetSeven\Api\NadawanieUprawnieApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$person_permissions_grant_request = {"subjectIdentifier":{"type":"Pesel","value":"15062788702"},"permissions":["InvoiceRead","InvoiceWrite"],"description":"Uprawnienia do odczytu i wysyłania faktur"}; // \OpenAPI\Client\Model\PersonPermissionsGrantRequest
+$person_permissions_grant_request = {"subjectIdentifier":{"type":"Pesel","value":"15062788702"},"permissions":["InvoiceRead","InvoiceWrite"],"description":"Uprawnienia do odczytu i wysyłania faktur"}; // \NetSeven\KseF2Model\PersonPermissionsGrantRequest
 
 try {
     $result = $apiInstance->apiV2PermissionsPersonsGrantsPost($person_permissions_grant_request);
@@ -330,11 +330,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **person_permissions_grant_request** | [**\OpenAPI\Client\Model\PersonPermissionsGrantRequest**](../Model/PersonPermissionsGrantRequest.md)|  | [optional] |
+| **person_permissions_grant_request** | [**\NetSeven\KseF2Model\PersonPermissionsGrantRequest**](../Model/PersonPermissionsGrantRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\PermissionsOperationResponse**](../Model/PermissionsOperationResponse.md)
+[**\NetSeven\KseF2Model\PermissionsOperationResponse**](../Model/PermissionsOperationResponse.md)
 
 ### Authorization
 
@@ -352,7 +352,7 @@ No authorization required
 ## `apiV2PermissionsSubunitsGrantsPost()`
 
 ```php
-apiV2PermissionsSubunitsGrantsPost($subunit_permissions_grant_request): \OpenAPI\Client\Model\PermissionsOperationResponse
+apiV2PermissionsSubunitsGrantsPost($subunit_permissions_grant_request): \NetSeven\KseF2Model\PermissionsOperationResponse
 ```
 
 Nadanie uprawnień administratora podmiotu podrzędnego
@@ -367,12 +367,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\NadawanieUprawnieApi(
+$apiInstance = new NetSeven\Api\NadawanieUprawnieApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$subunit_permissions_grant_request = {"subjectIdentifier":{"type":"Pesel","value":"15062788702"},"contextIdentifier":{"type":"InternalId","value":"7762811692-11111"},"description":"Administrator jednostki podrzędnej"}; // \OpenAPI\Client\Model\SubunitPermissionsGrantRequest
+$subunit_permissions_grant_request = {"subjectIdentifier":{"type":"Pesel","value":"15062788702"},"contextIdentifier":{"type":"InternalId","value":"7762811692-11111"},"description":"Administrator jednostki podrzędnej"}; // \NetSeven\KseF2Model\SubunitPermissionsGrantRequest
 
 try {
     $result = $apiInstance->apiV2PermissionsSubunitsGrantsPost($subunit_permissions_grant_request);
@@ -386,11 +386,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **subunit_permissions_grant_request** | [**\OpenAPI\Client\Model\SubunitPermissionsGrantRequest**](../Model/SubunitPermissionsGrantRequest.md)|  | [optional] |
+| **subunit_permissions_grant_request** | [**\NetSeven\KseF2Model\SubunitPermissionsGrantRequest**](../Model/SubunitPermissionsGrantRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\PermissionsOperationResponse**](../Model/PermissionsOperationResponse.md)
+[**\NetSeven\KseF2Model\PermissionsOperationResponse**](../Model/PermissionsOperationResponse.md)
 
 ### Authorization
 

@@ -1,4 +1,4 @@
-# OpenAPI\Client\DaneTestoweApi
+# NetSeven\DaneTestoweApi
 
 All URIs are relative to http://localhost, except if the operation defines another base path.
 
@@ -30,12 +30,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\DaneTestoweApi(
+$apiInstance = new NetSeven\Api\DaneTestoweApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$test_data_permissions_grant_request = new \OpenAPI\Client\Model\TestDataPermissionsGrantRequest(); // \OpenAPI\Client\Model\TestDataPermissionsGrantRequest
+$test_data_permissions_grant_request = new \NetSeven\KseF2Model\TestDataPermissionsGrantRequest(); // \NetSeven\KseF2Model\TestDataPermissionsGrantRequest
 
 try {
     $apiInstance->apiV2TestdataPermissionsPost($test_data_permissions_grant_request);
@@ -48,7 +48,7 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **test_data_permissions_grant_request** | [**\OpenAPI\Client\Model\TestDataPermissionsGrantRequest**](../Model/TestDataPermissionsGrantRequest.md)|  | [optional] |
+| **test_data_permissions_grant_request** | [**\NetSeven\KseF2Model\TestDataPermissionsGrantRequest**](../Model/TestDataPermissionsGrantRequest.md)|  | [optional] |
 
 ### Return type
 
@@ -85,12 +85,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\DaneTestoweApi(
+$apiInstance = new NetSeven\Api\DaneTestoweApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$test_data_permissions_revoke_request = new \OpenAPI\Client\Model\TestDataPermissionsRevokeRequest(); // \OpenAPI\Client\Model\TestDataPermissionsRevokeRequest
+$test_data_permissions_revoke_request = new \NetSeven\KseF2Model\TestDataPermissionsRevokeRequest(); // \NetSeven\KseF2Model\TestDataPermissionsRevokeRequest
 
 try {
     $apiInstance->apiV2TestdataPermissionsRevokePost($test_data_permissions_revoke_request);
@@ -103,7 +103,7 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **test_data_permissions_revoke_request** | [**\OpenAPI\Client\Model\TestDataPermissionsRevokeRequest**](../Model/TestDataPermissionsRevokeRequest.md)|  | [optional] |
+| **test_data_permissions_revoke_request** | [**\NetSeven\KseF2Model\TestDataPermissionsRevokeRequest**](../Model/TestDataPermissionsRevokeRequest.md)|  | [optional] |
 
 ### Return type
 
@@ -140,12 +140,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\DaneTestoweApi(
+$apiInstance = new NetSeven\Api\DaneTestoweApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$person_create_request = new \OpenAPI\Client\Model\PersonCreateRequest(); // \OpenAPI\Client\Model\PersonCreateRequest
+$person_create_request = new \NetSeven\KseF2Model\PersonCreateRequest(); // \NetSeven\KseF2Model\PersonCreateRequest
 
 try {
     $apiInstance->apiV2TestdataPersonPost($person_create_request);
@@ -158,7 +158,7 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **person_create_request** | [**\OpenAPI\Client\Model\PersonCreateRequest**](../Model/PersonCreateRequest.md)|  | [optional] |
+| **person_create_request** | [**\NetSeven\KseF2Model\PersonCreateRequest**](../Model/PersonCreateRequest.md)|  | [optional] |
 
 ### Return type
 
@@ -195,12 +195,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\DaneTestoweApi(
+$apiInstance = new NetSeven\Api\DaneTestoweApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$person_remove_request = new \OpenAPI\Client\Model\PersonRemoveRequest(); // \OpenAPI\Client\Model\PersonRemoveRequest
+$person_remove_request = new \NetSeven\KseF2Model\PersonRemoveRequest(); // \NetSeven\KseF2Model\PersonRemoveRequest
 
 try {
     $apiInstance->apiV2TestdataPersonRemovePost($person_remove_request);
@@ -213,7 +213,7 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **person_remove_request** | [**\OpenAPI\Client\Model\PersonRemoveRequest**](../Model/PersonRemoveRequest.md)|  | [optional] |
+| **person_remove_request** | [**\NetSeven\KseF2Model\PersonRemoveRequest**](../Model/PersonRemoveRequest.md)|  | [optional] |
 
 ### Return type
 
@@ -250,12 +250,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\DaneTestoweApi(
+$apiInstance = new NetSeven\Api\DaneTestoweApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$subject_create_request = new \OpenAPI\Client\Model\SubjectCreateRequest(); // \OpenAPI\Client\Model\SubjectCreateRequest
+$subject_create_request = new \NetSeven\KseF2Model\SubjectCreateRequest(); // \NetSeven\KseF2Model\SubjectCreateRequest
 
 try {
     $apiInstance->apiV2TestdataSubjectPost($subject_create_request);
@@ -268,7 +268,7 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **subject_create_request** | [**\OpenAPI\Client\Model\SubjectCreateRequest**](../Model/SubjectCreateRequest.md)|  | [optional] |
+| **subject_create_request** | [**\NetSeven\KseF2Model\SubjectCreateRequest**](../Model/SubjectCreateRequest.md)|  | [optional] |
 
 ### Return type
 
@@ -305,12 +305,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\DaneTestoweApi(
+$apiInstance = new NetSeven\Api\DaneTestoweApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$subject_remove_request = new \OpenAPI\Client\Model\SubjectRemoveRequest(); // \OpenAPI\Client\Model\SubjectRemoveRequest
+$subject_remove_request = new \NetSeven\KseF2Model\SubjectRemoveRequest(); // \NetSeven\KseF2Model\SubjectRemoveRequest
 
 try {
     $apiInstance->apiV2TestdataSubjectRemovePost($subject_remove_request);
@@ -323,7 +323,7 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **subject_remove_request** | [**\OpenAPI\Client\Model\SubjectRemoveRequest**](../Model/SubjectRemoveRequest.md)|  | [optional] |
+| **subject_remove_request** | [**\NetSeven\KseF2Model\SubjectRemoveRequest**](../Model/SubjectRemoveRequest.md)|  | [optional] |
 
 ### Return type
 

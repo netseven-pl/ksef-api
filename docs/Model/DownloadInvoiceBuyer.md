@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**identifier_type** | [**\OpenAPI\Client\Model\BuyerIdentifierType**](BuyerIdentifierType.md) | Typ identyfikatora nabywcy. |
+**identifier_type** | [**\NetSeven\KseF2Model\BuyerIdentifierType**](BuyerIdentifierType.md) | Typ identyfikatora nabywcy. |
 **identifier** | **string** | Wartośc identyfikatora nabywcy. Wymagane jeśli IdentifierType !&#x3D; &#39;None&#39;. | [optional]
 **name** | **string** | Nazwa podmiotu nabywcy, jeśli występuje na fakturze. | [optional]
 

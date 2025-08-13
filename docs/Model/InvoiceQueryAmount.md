@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**type** | [**\OpenAPI\Client\Model\AmountType**](AmountType.md) |  | [optional]
+**type** | [**\NetSeven\KseF2Model\AmountType**](AmountType.md) |  | [optional]
 **from** | **float** |  | [optional]
 **to** | **float** |  | [optional]
 

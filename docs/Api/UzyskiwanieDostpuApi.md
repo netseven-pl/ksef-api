@@ -1,4 +1,4 @@
-# OpenAPI\Client\UzyskiwanieDostpuApi
+# NetSeven\UzyskiwanieDostpuApi
 
 All URIs are relative to http://localhost, except if the operation defines another base path.
 
@@ -15,7 +15,7 @@ All URIs are relative to http://localhost, except if the operation defines anoth
 ## `apiV2AuthChallengePost()`
 
 ```php
-apiV2AuthChallengePost(): \OpenAPI\Client\Model\AuthenticationChallengeResponse
+apiV2AuthChallengePost(): \NetSeven\KseF2Model\AuthenticationChallengeResponse
 ```
 
 Inicjalizacja uwierzytelnienia
@@ -30,7 +30,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\UzyskiwanieDostpuApi(
+$apiInstance = new NetSeven\Api\UzyskiwanieDostpuApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -50,7 +50,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\OpenAPI\Client\Model\AuthenticationChallengeResponse**](../Model/AuthenticationChallengeResponse.md)
+[**\NetSeven\KseF2Model\AuthenticationChallengeResponse**](../Model/AuthenticationChallengeResponse.md)
 
 ### Authorization
 
@@ -68,7 +68,7 @@ No authorization required
 ## `apiV2AuthKsefTokenPost()`
 
 ```php
-apiV2AuthKsefTokenPost($init_token_authentication_request): \OpenAPI\Client\Model\AuthenticationInitResponse
+apiV2AuthKsefTokenPost($init_token_authentication_request): \NetSeven\KseF2Model\AuthenticationInitResponse
 ```
 
 Uwierzytelnienie z wykorzystaniem tokena KSeF
@@ -83,12 +83,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\UzyskiwanieDostpuApi(
+$apiInstance = new NetSeven\Api\UzyskiwanieDostpuApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$init_token_authentication_request = {"challenge":"20250625-CR-2FDC223000-C2BFC98A9C-4E","contextIdentifier":{"type":"Nip","value":"5265877635"},"encryptedToken":"..."}; // \OpenAPI\Client\Model\InitTokenAuthenticationRequest
+$init_token_authentication_request = {"challenge":"20250625-CR-2FDC223000-C2BFC98A9C-4E","contextIdentifier":{"type":"Nip","value":"5265877635"},"encryptedToken":"..."}; // \NetSeven\KseF2Model\InitTokenAuthenticationRequest
 
 try {
     $result = $apiInstance->apiV2AuthKsefTokenPost($init_token_authentication_request);
@@ -102,11 +102,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **init_token_authentication_request** | [**\OpenAPI\Client\Model\InitTokenAuthenticationRequest**](../Model/InitTokenAuthenticationRequest.md)|  | [optional] |
+| **init_token_authentication_request** | [**\NetSeven\KseF2Model\InitTokenAuthenticationRequest**](../Model/InitTokenAuthenticationRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\AuthenticationInitResponse**](../Model/AuthenticationInitResponse.md)
+[**\NetSeven\KseF2Model\AuthenticationInitResponse**](../Model/AuthenticationInitResponse.md)
 
 ### Authorization
 
@@ -124,7 +124,7 @@ No authorization required
 ## `apiV2AuthReferenceNumberGet()`
 
 ```php
-apiV2AuthReferenceNumberGet($reference_number): \OpenAPI\Client\Model\AuthenticationOperationStatusResponse
+apiV2AuthReferenceNumberGet($reference_number): \NetSeven\KseF2Model\AuthenticationOperationStatusResponse
 ```
 
 Pobranie statusu uwierzytelniania
@@ -139,7 +139,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\UzyskiwanieDostpuApi(
+$apiInstance = new NetSeven\Api\UzyskiwanieDostpuApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -162,7 +162,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\AuthenticationOperationStatusResponse**](../Model/AuthenticationOperationStatusResponse.md)
+[**\NetSeven\KseF2Model\AuthenticationOperationStatusResponse**](../Model/AuthenticationOperationStatusResponse.md)
 
 ### Authorization
 
@@ -180,7 +180,7 @@ No authorization required
 ## `apiV2AuthTokenRedeemPost()`
 
 ```php
-apiV2AuthTokenRedeemPost(): \OpenAPI\Client\Model\AuthenticationTokensResponse
+apiV2AuthTokenRedeemPost(): \NetSeven\KseF2Model\AuthenticationTokensResponse
 ```
 
 Pobranie tokenów dostępowych
@@ -195,7 +195,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\UzyskiwanieDostpuApi(
+$apiInstance = new NetSeven\Api\UzyskiwanieDostpuApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -215,7 +215,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\OpenAPI\Client\Model\AuthenticationTokensResponse**](../Model/AuthenticationTokensResponse.md)
+[**\NetSeven\KseF2Model\AuthenticationTokensResponse**](../Model/AuthenticationTokensResponse.md)
 
 ### Authorization
 
@@ -233,7 +233,7 @@ No authorization required
 ## `apiV2AuthTokenRefreshPost()`
 
 ```php
-apiV2AuthTokenRefreshPost(): \OpenAPI\Client\Model\AuthenticationTokenRefreshResponse
+apiV2AuthTokenRefreshPost(): \NetSeven\KseF2Model\AuthenticationTokenRefreshResponse
 ```
 
 Odświeżenie tokena dostępowego
@@ -248,7 +248,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\UzyskiwanieDostpuApi(
+$apiInstance = new NetSeven\Api\UzyskiwanieDostpuApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -268,7 +268,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\OpenAPI\Client\Model\AuthenticationTokenRefreshResponse**](../Model/AuthenticationTokenRefreshResponse.md)
+[**\NetSeven\KseF2Model\AuthenticationTokenRefreshResponse**](../Model/AuthenticationTokenRefreshResponse.md)
 
 ### Authorization
 
@@ -286,7 +286,7 @@ No authorization required
 ## `apiV2AuthXadesSignaturePost()`
 
 ```php
-apiV2AuthXadesSignaturePost($body, $verify_certificate_chain): \OpenAPI\Client\Model\AuthenticationInitResponse
+apiV2AuthXadesSignaturePost($body, $verify_certificate_chain): \NetSeven\KseF2Model\AuthenticationInitResponse
 ```
 
 Uwierzytelnienie z wykorzystaniem podpisu XAdES
@@ -301,7 +301,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\UzyskiwanieDostpuApi(
+$apiInstance = new NetSeven\Api\UzyskiwanieDostpuApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -337,7 +337,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\AuthenticationInitResponse**](../Model/AuthenticationInitResponse.md)
+[**\NetSeven\KseF2Model\AuthenticationInitResponse**](../Model/AuthenticationInitResponse.md)
 
 ### Authorization
 

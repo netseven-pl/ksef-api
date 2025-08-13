@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**date_type** | [**\OpenAPI\Client\Model\InvoiceQueryDateType**](InvoiceQueryDateType.md) | Typ daty, według której ma być zastosowany zakres.  | Wartość | Opis |  | --- | --- |  | Issue | Data wystawienia faktury. |  | Invoicing | Data przyjęcia faktury w systemie KSeF. |  | Acquisition | Data nadania numeru KSeF. |  | Hidden | Data ukrycia faktury w systemie KSeF. | |
+**date_type** | [**\NetSeven\KseF2Model\InvoiceQueryDateType**](InvoiceQueryDateType.md) | Typ daty, według której ma być zastosowany zakres.  | Wartość | Opis |  | --- | --- |  | Issue | Data wystawienia faktury. |  | Invoicing | Data przyjęcia faktury w systemie KSeF. |  | Acquisition | Data nadania numeru KSeF. |  | Hidden | Data ukrycia faktury w systemie KSeF. | |
 **from** | **\DateTime** | Data początkowa zakresu. |
 **to** | **\DateTime** | Data końcowa zakresu. |
 

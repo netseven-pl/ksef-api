@@ -1,4 +1,4 @@
-# OpenAPI\Client\CertyfikatyApi
+# NetSeven\CertyfikatyApi
 
 All URIs are relative to http://localhost, except if the operation defines another base path.
 
@@ -31,13 +31,13 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\CertyfikatyApi(
+$apiInstance = new NetSeven\Api\CertyfikatyApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $certificate_serial_number = 'certificate_serial_number_example'; // string | Numer seryjny certyfikatu (w formacie szesnastkowym).
-$revoke_certificate_request = new \OpenAPI\Client\Model\RevokeCertificateRequest(); // \OpenAPI\Client\Model\RevokeCertificateRequest | 
+$revoke_certificate_request = new \NetSeven\KseF2Model\RevokeCertificateRequest(); // \NetSeven\KseF2Model\RevokeCertificateRequest | 
 
 try {
     $apiInstance->apiV2CertificatesCertificateSerialNumberRevokePost($certificate_serial_number, $revoke_certificate_request);
@@ -51,7 +51,7 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **certificate_serial_number** | **string**| Numer seryjny certyfikatu (w formacie szesnastkowym). | |
-| **revoke_certificate_request** | [**\OpenAPI\Client\Model\RevokeCertificateRequest**](../Model/RevokeCertificateRequest.md)|  | [optional] |
+| **revoke_certificate_request** | [**\NetSeven\KseF2Model\RevokeCertificateRequest**](../Model/RevokeCertificateRequest.md)|  | [optional] |
 
 ### Return type
 
@@ -73,7 +73,7 @@ No authorization required
 ## `apiV2CertificatesEnrollmentsDataGet()`
 
 ```php
-apiV2CertificatesEnrollmentsDataGet(): \OpenAPI\Client\Model\CertificateEnrollmentDataResponse
+apiV2CertificatesEnrollmentsDataGet(): \NetSeven\KseF2Model\CertificateEnrollmentDataResponse
 ```
 
 Pobranie danych do wniosku certyfikacyjnego
@@ -88,7 +88,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\CertyfikatyApi(
+$apiInstance = new NetSeven\Api\CertyfikatyApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -108,7 +108,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\OpenAPI\Client\Model\CertificateEnrollmentDataResponse**](../Model/CertificateEnrollmentDataResponse.md)
+[**\NetSeven\KseF2Model\CertificateEnrollmentDataResponse**](../Model/CertificateEnrollmentDataResponse.md)
 
 ### Authorization
 
@@ -126,7 +126,7 @@ No authorization required
 ## `apiV2CertificatesEnrollmentsPost()`
 
 ```php
-apiV2CertificatesEnrollmentsPost($enroll_certificate_request): \OpenAPI\Client\Model\EnrollCertificateResponse
+apiV2CertificatesEnrollmentsPost($enroll_certificate_request): \NetSeven\KseF2Model\EnrollCertificateResponse
 ```
 
 Wysyłka wniosku certyfikacyjnego
@@ -141,12 +141,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\CertyfikatyApi(
+$apiInstance = new NetSeven\Api\CertyfikatyApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$enroll_certificate_request = new \OpenAPI\Client\Model\EnrollCertificateRequest(); // \OpenAPI\Client\Model\EnrollCertificateRequest | 
+$enroll_certificate_request = new \NetSeven\KseF2Model\EnrollCertificateRequest(); // \NetSeven\KseF2Model\EnrollCertificateRequest | 
 
 try {
     $result = $apiInstance->apiV2CertificatesEnrollmentsPost($enroll_certificate_request);
@@ -160,11 +160,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **enroll_certificate_request** | [**\OpenAPI\Client\Model\EnrollCertificateRequest**](../Model/EnrollCertificateRequest.md)|  | [optional] |
+| **enroll_certificate_request** | [**\NetSeven\KseF2Model\EnrollCertificateRequest**](../Model/EnrollCertificateRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\EnrollCertificateResponse**](../Model/EnrollCertificateResponse.md)
+[**\NetSeven\KseF2Model\EnrollCertificateResponse**](../Model/EnrollCertificateResponse.md)
 
 ### Authorization
 
@@ -182,7 +182,7 @@ No authorization required
 ## `apiV2CertificatesEnrollmentsReferenceNumberGet()`
 
 ```php
-apiV2CertificatesEnrollmentsReferenceNumberGet($reference_number): \OpenAPI\Client\Model\CertificateEnrollmentStatusResponse
+apiV2CertificatesEnrollmentsReferenceNumberGet($reference_number): \NetSeven\KseF2Model\CertificateEnrollmentStatusResponse
 ```
 
 Pobranie statusu przetwarzania wniosku certyfikacyjnego
@@ -197,7 +197,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\CertyfikatyApi(
+$apiInstance = new NetSeven\Api\CertyfikatyApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -220,7 +220,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\CertificateEnrollmentStatusResponse**](../Model/CertificateEnrollmentStatusResponse.md)
+[**\NetSeven\KseF2Model\CertificateEnrollmentStatusResponse**](../Model/CertificateEnrollmentStatusResponse.md)
 
 ### Authorization
 
@@ -238,7 +238,7 @@ No authorization required
 ## `apiV2CertificatesLimitsGet()`
 
 ```php
-apiV2CertificatesLimitsGet(): \OpenAPI\Client\Model\CertificateLimitsResponse
+apiV2CertificatesLimitsGet(): \NetSeven\KseF2Model\CertificateLimitsResponse
 ```
 
 Pobranie danych o limitach certyfikatów
@@ -253,7 +253,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\CertyfikatyApi(
+$apiInstance = new NetSeven\Api\CertyfikatyApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -273,7 +273,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\OpenAPI\Client\Model\CertificateLimitsResponse**](../Model/CertificateLimitsResponse.md)
+[**\NetSeven\KseF2Model\CertificateLimitsResponse**](../Model/CertificateLimitsResponse.md)
 
 ### Authorization
 
@@ -291,7 +291,7 @@ No authorization required
 ## `apiV2CertificatesQueryPost()`
 
 ```php
-apiV2CertificatesQueryPost($page_size, $page_offset, $query_certificates_request): \OpenAPI\Client\Model\QueryCertificatesResponse
+apiV2CertificatesQueryPost($page_size, $page_offset, $query_certificates_request): \NetSeven\KseF2Model\QueryCertificatesResponse
 ```
 
 Pobranie listy metadanych certyfikatów
@@ -306,14 +306,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\CertyfikatyApi(
+$apiInstance = new NetSeven\Api\CertyfikatyApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $page_size = 10; // int | Rozmiar strony wyników
 $page_offset = 0; // int | Numer strony wyników
-$query_certificates_request = new \OpenAPI\Client\Model\QueryCertificatesRequest(); // \OpenAPI\Client\Model\QueryCertificatesRequest | Kryteria filtrowania
+$query_certificates_request = new \NetSeven\KseF2Model\QueryCertificatesRequest(); // \NetSeven\KseF2Model\QueryCertificatesRequest | Kryteria filtrowania
 
 try {
     $result = $apiInstance->apiV2CertificatesQueryPost($page_size, $page_offset, $query_certificates_request);
@@ -329,11 +329,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **page_size** | **int**| Rozmiar strony wyników | [optional] [default to 10] |
 | **page_offset** | **int**| Numer strony wyników | [optional] [default to 0] |
-| **query_certificates_request** | [**\OpenAPI\Client\Model\QueryCertificatesRequest**](../Model/QueryCertificatesRequest.md)| Kryteria filtrowania | [optional] |
+| **query_certificates_request** | [**\NetSeven\KseF2Model\QueryCertificatesRequest**](../Model/QueryCertificatesRequest.md)| Kryteria filtrowania | [optional] |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\QueryCertificatesResponse**](../Model/QueryCertificatesResponse.md)
+[**\NetSeven\KseF2Model\QueryCertificatesResponse**](../Model/QueryCertificatesResponse.md)
 
 ### Authorization
 
@@ -351,7 +351,7 @@ No authorization required
 ## `apiV2CertificatesRetrievePost()`
 
 ```php
-apiV2CertificatesRetrievePost($retrieve_certificates_request): \OpenAPI\Client\Model\RetrieveCertificatesResponse
+apiV2CertificatesRetrievePost($retrieve_certificates_request): \NetSeven\KseF2Model\RetrieveCertificatesResponse
 ```
 
 Pobranie certyfikatu lub listy certyfikatów
@@ -366,12 +366,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\CertyfikatyApi(
+$apiInstance = new NetSeven\Api\CertyfikatyApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$retrieve_certificates_request = new \OpenAPI\Client\Model\RetrieveCertificatesRequest(); // \OpenAPI\Client\Model\RetrieveCertificatesRequest | 
+$retrieve_certificates_request = new \NetSeven\KseF2Model\RetrieveCertificatesRequest(); // \NetSeven\KseF2Model\RetrieveCertificatesRequest | 
 
 try {
     $result = $apiInstance->apiV2CertificatesRetrievePost($retrieve_certificates_request);
@@ -385,11 +385,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **retrieve_certificates_request** | [**\OpenAPI\Client\Model\RetrieveCertificatesRequest**](../Model/RetrieveCertificatesRequest.md)|  | [optional] |
+| **retrieve_certificates_request** | [**\NetSeven\KseF2Model\RetrieveCertificatesRequest**](../Model/RetrieveCertificatesRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\RetrieveCertificatesResponse**](../Model/RetrieveCertificatesResponse.md)
+[**\NetSeven\KseF2Model\RetrieveCertificatesResponse**](../Model/RetrieveCertificatesResponse.md)
 
 ### Authorization
 

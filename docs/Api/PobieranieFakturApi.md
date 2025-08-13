@@ -1,4 +1,4 @@
-# OpenAPI\Client\PobieranieFakturApi
+# NetSeven\PobieranieFakturApi
 
 All URIs are relative to http://localhost, except if the operation defines another base path.
 
@@ -14,7 +14,7 @@ All URIs are relative to http://localhost, except if the operation defines anoth
 ## `apiV2InvoicesAsyncQueryOperationReferenceNumberGet()`
 
 ```php
-apiV2InvoicesAsyncQueryOperationReferenceNumberGet($operation_reference_number): \OpenAPI\Client\Model\AsyncInvoicesQueryStatus
+apiV2InvoicesAsyncQueryOperationReferenceNumberGet($operation_reference_number): \NetSeven\KseF2Model\AsyncInvoicesQueryStatus
 ```
 
 [mock] Sprawdza status asynchronicznego zapytania o pobranie faktur
@@ -29,7 +29,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\PobieranieFakturApi(
+$apiInstance = new NetSeven\Api\PobieranieFakturApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -52,7 +52,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\AsyncInvoicesQueryStatus**](../Model/AsyncInvoicesQueryStatus.md)
+[**\NetSeven\KseF2Model\AsyncInvoicesQueryStatus**](../Model/AsyncInvoicesQueryStatus.md)
 
 ### Authorization
 
@@ -70,7 +70,7 @@ No authorization required
 ## `apiV2InvoicesAsyncQueryPost()`
 
 ```php
-apiV2InvoicesAsyncQueryPost($invoices_async_query_request): \OpenAPI\Client\Model\InitAsyncInvoicesQueryResponse
+apiV2InvoicesAsyncQueryPost($invoices_async_query_request): \NetSeven\KseF2Model\InitAsyncInvoicesQueryResponse
 ```
 
 [mock] Inicjalizuje asynchroniczne zapytanie o pobranie faktur
@@ -85,12 +85,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\PobieranieFakturApi(
+$apiInstance = new NetSeven\Api\PobieranieFakturApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$invoices_async_query_request = new \OpenAPI\Client\Model\InvoicesAsyncQueryRequest(); // \OpenAPI\Client\Model\InvoicesAsyncQueryRequest | Zestaw filtrów dla wyszukiwania faktur.
+$invoices_async_query_request = new \NetSeven\KseF2Model\InvoicesAsyncQueryRequest(); // \NetSeven\KseF2Model\InvoicesAsyncQueryRequest | Zestaw filtrów dla wyszukiwania faktur.
 
 try {
     $result = $apiInstance->apiV2InvoicesAsyncQueryPost($invoices_async_query_request);
@@ -104,11 +104,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **invoices_async_query_request** | [**\OpenAPI\Client\Model\InvoicesAsyncQueryRequest**](../Model/InvoicesAsyncQueryRequest.md)| Zestaw filtrów dla wyszukiwania faktur. | [optional] |
+| **invoices_async_query_request** | [**\NetSeven\KseF2Model\InvoicesAsyncQueryRequest**](../Model/InvoicesAsyncQueryRequest.md)| Zestaw filtrów dla wyszukiwania faktur. | [optional] |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\InitAsyncInvoicesQueryResponse**](../Model/InitAsyncInvoicesQueryResponse.md)
+[**\NetSeven\KseF2Model\InitAsyncInvoicesQueryResponse**](../Model/InitAsyncInvoicesQueryResponse.md)
 
 ### Authorization
 
@@ -141,12 +141,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\PobieranieFakturApi(
+$apiInstance = new NetSeven\Api\PobieranieFakturApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$download_invoice_request = new \OpenAPI\Client\Model\DownloadInvoiceRequest(); // \OpenAPI\Client\Model\DownloadInvoiceRequest
+$download_invoice_request = new \NetSeven\KseF2Model\DownloadInvoiceRequest(); // \NetSeven\KseF2Model\DownloadInvoiceRequest
 
 try {
     $result = $apiInstance->apiV2InvoicesDownloadPost($download_invoice_request);
@@ -160,7 +160,7 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **download_invoice_request** | [**\OpenAPI\Client\Model\DownloadInvoiceRequest**](../Model/DownloadInvoiceRequest.md)|  | [optional] |
+| **download_invoice_request** | [**\NetSeven\KseF2Model\DownloadInvoiceRequest**](../Model/DownloadInvoiceRequest.md)|  | [optional] |
 
 ### Return type
 
@@ -197,7 +197,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\PobieranieFakturApi(
+$apiInstance = new NetSeven\Api\PobieranieFakturApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -238,7 +238,7 @@ No authorization required
 ## `apiV2InvoicesQueryPost()`
 
 ```php
-apiV2InvoicesQueryPost($page_offset, $page_size, $invoices_query_request): \OpenAPI\Client\Model\QueryInvoicesReponse
+apiV2InvoicesQueryPost($page_offset, $page_size, $invoices_query_request): \NetSeven\KseF2Model\QueryInvoicesReponse
 ```
 
 [mock] Pobranie listy metadanych faktur
@@ -253,14 +253,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\PobieranieFakturApi(
+$apiInstance = new NetSeven\Api\PobieranieFakturApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $page_offset = 56; // int | Indeks pierwszej strony wyników (domyślnie 0).
 $page_size = 56; // int | Rozmiar strony wyników(domyślnie 10).
-$invoices_query_request = new \OpenAPI\Client\Model\InvoicesQueryRequest(); // \OpenAPI\Client\Model\InvoicesQueryRequest | Zestaw filtrów dla wyszukiwania metadanych.
+$invoices_query_request = new \NetSeven\KseF2Model\InvoicesQueryRequest(); // \NetSeven\KseF2Model\InvoicesQueryRequest | Zestaw filtrów dla wyszukiwania metadanych.
 
 try {
     $result = $apiInstance->apiV2InvoicesQueryPost($page_offset, $page_size, $invoices_query_request);
@@ -276,11 +276,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **page_offset** | **int**| Indeks pierwszej strony wyników (domyślnie 0). | [optional] |
 | **page_size** | **int**| Rozmiar strony wyników(domyślnie 10). | [optional] |
-| **invoices_query_request** | [**\OpenAPI\Client\Model\InvoicesQueryRequest**](../Model/InvoicesQueryRequest.md)| Zestaw filtrów dla wyszukiwania metadanych. | [optional] |
+| **invoices_query_request** | [**\NetSeven\KseF2Model\InvoicesQueryRequest**](../Model/InvoicesQueryRequest.md)| Zestaw filtrów dla wyszukiwania metadanych. | [optional] |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\QueryInvoicesReponse**](../Model/QueryInvoicesReponse.md)
+[**\NetSeven\KseF2Model\QueryInvoicesReponse**](../Model/QueryInvoicesReponse.md)
 
 ### Authorization
 
